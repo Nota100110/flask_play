@@ -12,7 +12,8 @@ app = Flask(__name__)
 
 def home():
     #returns page from template just created
-    return render_template('home.html')
+    # Nick is accessed jinja
+    return render_template('home.html', name='Nick')
 
 # Second route
 @app.route('/about')
